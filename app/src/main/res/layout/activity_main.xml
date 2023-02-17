@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Введите номер Вашего билета"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="279dp"
+        android:layout_height="74dp"
+        android:background="#9EE5DD"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Номер билета"
+        android:textColor="#00695C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="174dp"
+        android:layout_height="55dp"
+        android:text="Проверить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="344dp"
+        android:layout_height="86dp"
+        android:background="#CAD3D2"
+        android:gravity="center"
+        android:text="Информация  о билете"
+        android:textColor="#455A64"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
