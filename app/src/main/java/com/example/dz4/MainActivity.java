@@ -29,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             String ticket;
             ticket = inputField.getText().toString();
-            inputField.setText("Успех!");
-            String concatenatedPhrase = "К сожалению, Ваш билет не относится к счастливым. Следующий счастливый билет - " + Calculation.nextHappyTicket(ticket);
-            if (Calculation.check(ticket)) infoField.setText("Поздравляем! Ваш билет счастливый!");
-            else infoField.setText(concatenatedPhrase);
+            if (!ticket.contains(" ") && !ticket.contains("!")) {
+                inputField.setText("Успех!");
+                String concatenatedPhrase = "К сожалению, Ваш билет не относится к счастливым. Следующий счастливый билет - " + Calculation.nextHappyTicket(ticket);
+                if (Calculation.check(ticket)) infoField.setText("Поздравляем! Ваш билет счастливый!");
+                else infoField.setText(concatenatedPhrase);}
         }
     };
 }
